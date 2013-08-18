@@ -3,6 +3,12 @@ Pedro J Rodriguez
 ASD AUG 2013
 main.css 
 */
+<<<<<<< HEAD
+background {
+	background: url(images/logo.png)
+}
+=======
+>>>>>>> production
 label.error{
 	display: block; margin: 12px 0; color:#f50505;
 	font-size: 12pt;
