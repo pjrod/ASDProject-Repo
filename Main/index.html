@@ -3,17 +3,153 @@
 <!-- ASD 1308 -->
 <!-- index.html file -->
 <html lang="en">
-
-<html>
+	
 	<head>
-		<!-- Main Stylesheet -->
+		<meta charset="utf-8"/>
+		<meta name="description" content="EndulsArte Cake Designs main App page."/>				<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">					<meta http-equiv="cleartype" content="on">
+		
+		<title>EndulsArte Cake Designs</title>
+		
+<!-- 	Main Stylesheet		 -->
+		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
 		<link rel="stylesheet" href="CSS/main.css" type="text/css"/>
+		
+<!-- 	Modernizer Java Script	 -->
+		
+		<script src="JS/modernizr.custom.min.js"></script>
 	</head>
 
 	<body>
+		<div data-role="page" id="home" data-theme="a">
+			<div data-role="header" >
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><img src="images/logo.png"></div>
+				<div class="ui-block-b"><h1>Cake Designs</h1>
+				<p><a href="#formpage" data-ajax="false" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" data-inline="true" id="PlaceOrderNow">Place Order Now</a></p>
+				</div>
+			</div>
+		</div>
+			<div data-role="content">
+		 		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-theme="a" data-theme="b">
+		 			<li data-role="list-divider" data-theme="c"><h2>Welcome</h2></li>
+		 			<li>
+		 				<a href="#Error">
+			 				<h3>Our Products</h3>
+			 				<p>What we have to offer</p>
+		 				</a>
+		 			</li>
+		 			<li>
+		 				<a href="#Galleries">
+		 					<h3>Product Galleries</h3>
+		 					<p>Take a look at our product galleries</p>
+		 				</a>
+		 			</li>
+		 			<li>
+		 				<a href="#Error" data-ajax="false">
+		 					<h3>Work Shops</h3>
+		 					<p>Experience the art of cake making</p>
+		 				</a>
+		 			</li>
+		 			<li>
+		 				<a href="#Error">
+		 				 	<h3>Calendar</h3>
+		 				 	<p>View available dates for orders</p>
+		 				</a>
+		 			</li>
+		 			<li>
+		 				<a href="#Error">
+		 				 	<h3>Video Resources</h3>
+		 				 	<p>Educational Videos</p>
+		 				</a>
+		 			</li>
+
+			 	</ul>
+		 </div>
+			<div data-role="footer"  data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#About" data-icon="info">About</a></li>
+					<li><a href="#NewStream" data-icon="grid">News</a></li>
+					<li><a href="#Error" data-icon="gear">Terms</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+<!-- 	About Page Section	 -->
+		<div data-role="page" id="About" data-add-back-btn="true" data-theme="a">
+			<div data-role="header" data-position="fixed">
+				<div class="ui-grid-b">
+					<div class="ui-block-a" id="blockA"></div>
+					<div class="ui-block-b"><h3>ABOUT US</h3></div>
+					<div class="ui-block-c"><a href="#home"><img src="Images/minilogo.jpg" id="minilogo"></a></div>
+				</div>
+			</div>
+			<div data-role="content" data-theme="a">
+				<div data-role="collapsible" data-theme"a">
+					<h3>About EndulsArte</h3>
+						<p>EndulsArte is a home cake business that my mother in law owns. She 							makes cakes among other goodies for almost any occasion.  She 								focuses on the artistic part and flavor.</p>
+						<p>This App will allow you to enter your email along with other 								information for a specific purpose that being either requesting 							information, subscribing, or placing an order.</p>
+						<ul data-role="listview">
+							<li data-role="list-divider"><h4>EdulseArte Facebook</h4></li>
+								<li data-theme="c"><a href="https://www.facebook.com/enduls.arte.7?fref=ts">EndulsArte</a></li>
+						</ul>
+				</div>
+				<div data-role="collapsible" data-theme="a">
+					<h3>GitHub Repository</h3>
+					<p>Link to GitHub Repo</p>
+					<p><a href="https://github.com/pjrod/ASDProject-Repo">Repo</a></p>
+				</div>
+				<div data-role="collapsible" data-theme="a">
+					<h3>Credits</h3>
+					<p>Images used are property of their owners and acquired with permission.  						EndulArte Cake Designs logo and trademarks are property of Mary 							Annette Aldebol Owner of the same.</p>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="#About" data-icon="info" class="ui-btn-active">About</a></li>
+						<li><a href="#NewStream" data-icon="grid">News</a></li>
+						<li><a href="#Error" data-icon="gear">Terms</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		
-	</body>
+<!-- 	404 Error Page		 -->
+		
+		<div data-role="page" id="Error" data-theme="a" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed">
+				<h1>404 Error</h1>
+			</div>
+			<div data-role="content">
+				<p>"Sorry, this page was not found or is not available at this time thank 						you."
+				</p>
+			</div>
+			<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="#About" data-icon="info">About</a></li>
+						<li><a href="#NewStream" data-icon="grid">News</a></li>
+						<li><a href="#Error" data-icon="gear">Terms</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+				
 		<!-- JavaScript -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="JS/jquery2.0.3.js"></script>
 		<script type="text/javascript" src="JS/main.js"></script>
+	</body>
+		
 
 </html>
