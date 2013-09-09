@@ -1,5 +1,5 @@
 //Pedro J Rodriguez
-//ASD AUG 2013
+//ASD sep 2013
 //main.js file
 
 $('#home').on('pageinit', function(){
